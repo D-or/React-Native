@@ -1,0 +1,25 @@
+platform :ios, '8.0'
+
+target 'Xianyu' do
+  pod 'yoga', path: '../node_modules/react-native/ReactCommon/yoga/'
+  pod 'React', path: '../node_modules/react-native/', :subspecs => [
+    'BatchedBridge',
+  ]
+  pod 'react-native-amap3d', path: '../node_modules/react-native-amap3d/ios/'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+  pod 'react-native-fetch-blob', :path => '../node_modules/react-native-fetch-blob'
+
+  pod 'react-native-pdf', :path => '../node_modules/react-native-pdf'
+
+  pod 'RNSound', :path => '../node_modules/react-native-sound'
+
+  pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
+
+  pod 'react-native-contacts', :path => '../node_modules/react-native-contacts'
+
+  pod 'react-native-video', :path => '../node_modules/react-native-video'
+
+end
