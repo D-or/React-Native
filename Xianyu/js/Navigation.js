@@ -43,6 +43,7 @@ import Masonry from './screens/Masonry';
 import FileUploading from './screens/FileUploading';
 import Video from './screens/Video';
 import Chat from './screens/Chat';
+import AR from './screens/AR';
 
 const RootNavigator = StackNavigator({
   Home: {
@@ -131,6 +132,12 @@ const RootNavigator = StackNavigator({
   },
   Chat: {
     screen: Chat,
+    navigationOptions: {
+      header: null
+    }
+  },
+  AR: {
+    screen: AR,
     navigationOptions: {
       header: null
     }

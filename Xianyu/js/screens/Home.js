@@ -33,8 +33,6 @@ import { Container, Header, Left, Body, Right, Title, Button, Text, List, ListIt
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import { HomeList } from "../src/homeList";
-// import wsConnect from '../chat/connection';
-var socket = require('socket.io-client')('http://127.0.0.1:7001/chat');
 
 export default class Home extends Component {
   constructor() {
@@ -43,25 +41,6 @@ export default class Home extends Component {
     this.state = {
       isRefreshing: false
     }
-  }
-
-  componentWillMount() {
-    // wsConnect.init();
-    // wsConnect.connect();
-    console.log("------------");
-    socket.on('connect', () => {
-      console.log('connect!');
-      socket.emit('chat', 'hello world!');
-    });
-    socket.on('event', (data) => {
-      console.log(data);
-    });
-    socket.on('disconnect', (e) => {
-      console.log(e);
-    });
-    socket.on('res', msg => {
-      console.log('res from server: %s!', msg);
-    });
   }
 
   render() {

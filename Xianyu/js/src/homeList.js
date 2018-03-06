@@ -56,5 +56,7 @@ export const HomeList = [
     name: "Video"
   }, {
     name: "Chat"
+  }, {
+    name: "AR"
   }
 ];
