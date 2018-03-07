@@ -44,6 +44,7 @@ import FileUploading from './screens/FileUploading';
 import Video from './screens/Video';
 import Chat from './screens/Chat';
 import AR from './screens/AR';
+import Parallax from './screens/Parallax';
 
 const RootNavigator = StackNavigator({
   Home: {
@@ -138,6 +139,12 @@ const RootNavigator = StackNavigator({
   },
   AR: {
     screen: AR,
+    navigationOptions: {
+      header: null
+    }
+  },
+  Parallax: {
+    screen: Parallax,
     navigationOptions: {
       header: null
     }
